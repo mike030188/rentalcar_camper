@@ -1,9 +1,10 @@
+
 export const card = {
   yangi: [
     {
       id: 1,
       car: {
-        photo: "src={camping}",
+        photo: "",
         name: "르벤투스S+",
         cost: "90,200,000",
         type: "르노마스터",
