@@ -1,6 +1,7 @@
 import React from 'react';
 import {card} from '../mock/poducts';
 import NavbarComp from '../navbar/Navbar';
+import { HeadWrapper } from '../styles/MotorComponents.style';
 
 const MotorComponents = () => {
   const datas = card.yangi
@@ -10,6 +11,11 @@ const MotorComponents = () => {
       return (
         <div key={data.id} style={{border: '1px solid black'}}>
         <NavbarComp/>
+        <HeadWrapper>
+          <h5>Home / Motors</h5>
+          <h3>Our ranges</h3>
+          <h1>Motors</h1>
+        </HeadWrapper>
 
           <p>{data.id}</p>
           <div>{data.car.company}</div>
