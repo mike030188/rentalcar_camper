@@ -1,10 +1,12 @@
+// import camping1 from '../../images/camping1.png';
+// import camping2 from '../../images/camping2.png';
 
 export const card = {
   yangi: [
     {
       id: 1,
       car: {
-        photo: "",
+        photo: "//",
         name: "르벤투스S+",
         cost: "90,200,000",
         type: "르노마스터",
