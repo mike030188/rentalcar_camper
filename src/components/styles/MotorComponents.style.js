@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import motorBgImage from '../../images/motorBgImage.png'
+import motorBgImage from '../../assets/motorBgImage.png'
 
 export const HeadWrapper = styled.div`
 background-image: url(${motorBgImage});

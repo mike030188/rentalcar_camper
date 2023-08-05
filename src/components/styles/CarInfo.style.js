@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import carInfoBgImg from '../../images/carInfoBgImg.png'
+import carInfoBgImg from '../../assets/carInfoBgImg.png'
 
 export const HeadWrapper = styled.div`
 background-image: url(${carInfoBgImg});
@@ -33,8 +33,9 @@ background-color: ${(props)=>props.add ? "#006DAB" : "transparent"};
 border: ${(props)=>props.add ? "none" : "2px solid #FFF"};
 cursor: pointer;
 
-&:hover{
-    background-color: ${(props)=>props.add ? "transparent" : "#006DAB"};
-    border: ${(props)=>props.add ? "2px solid #FFF" : "none"};
-}
+&:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+
 `
