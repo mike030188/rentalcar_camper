@@ -2,8 +2,8 @@ import React from 'react';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
 import { Button, HeadWrapper, MainWrapper } from '../styles/CarInfo.style';
-import Card from './Card';
 import content from '../mock/content';
+import CardComp from './Card';
 
 const CarInfo = () => {
   return (
@@ -16,9 +16,9 @@ const CarInfo = () => {
           <Button comp>COMPARE</Button>
         </div>          
       </HeadWrapper>
-      <MainWrapper>      
+      <MainWrapper>              
         <div>{content.map((item, index) => (
-          <Card key={index} item={item}/>))}
+          <CardComp key={index} item={item}/>))}
         </div>
         <div style={{paddingLeft:'70px', marginTop:'-130px', marginBottom:'154px'}}>
           <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>

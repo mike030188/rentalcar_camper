@@ -11,8 +11,8 @@ root.render(
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<CarInfo/>} />
-        <Route path="/motorcomponents" element={<MotorComponents/>} />
+      <Route path="/" element={<MotorComponents/>} />
+      <Route path="/carinfo/:id" element={<CarInfo/>} />
       </Routes>
     </BrowserRouter>
     

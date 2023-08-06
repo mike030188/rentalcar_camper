@@ -1,6 +1,6 @@
 import { StyledCard } from "../styles/Card.style";
 
-export default function Card ({item: { id, title, body, image }}) {
+export default function CardComp ({item: { id, title, body, image }}) {
     return(
         <StyledCard layout={id % 2 === 0 && 'row-reverse'}>
             <div>
@@ -8,7 +8,7 @@ export default function Card ({item: { id, title, body, image }}) {
                 <p>{body}</p>
             </div>
             <div>
-                <img src={`./images/${image}`} alt="" />
+                <img src={image} alt="img is not find" />
             </div>
         </StyledCard>
     )
