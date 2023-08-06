@@ -31,8 +31,96 @@ h1{
 }
 `
 
+export const MainWrap = styled.div`
+display: flex;
+padding: 0 70px;
+
+`
+
+export const SideBar = styled.div`
+flex: 1;
+color: var(--text, #373737);
+padding: 85px 28px 0 0;
+`
+
+export const Col = styled.div`
+display: flex;
+flex-direction: column;
+
+label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+}
+
+input{
+    width:91px;
+    height:36px;
+    border-radius: 10px;
+    border: 1px solid rgba(55, 55, 55, 0.60);
+
+}
+`
+
+export const Text = styled.div`
+font-size: 18px;
+font-weight: 600;
+padding-bottom: 15px;
+line-height: 100%; /* 18px */
+border-bottom: 1px solid rgba(55, 55, 55, 0.30);
+`
+
+export const ItemBar = styled.div`
+flex: 4;
+
+`
+export const Row = styled.div`
+display: flex;
+font-size: 18px;
+font-weight: 600;
+color: var(--text, #373737);
+padding: 80px 0 10px;
+line-height: 100%; /* 18px */
+border-bottom: 1px solid rgba(55, 55, 55, 0.30);
+
+`
+
+export const Flex = styled.div`
+display: flex;
+flex: 1;
+align-items: center;
+justify-content: ${(props) => props.right ? "right" : ""};
+
+select{
+    border-radius: 5px;
+    border: 1px solid rgba(55, 55, 55, 0.30);
+}
+
+button{
+    width: 40px;
+    height: 30px;    
+    border: 1px solid rgba(55, 55, 55, 0.30);
+}
+
+`
+
 export const GridContainer = styled.div`
 display: grid;
 grid-template-columns: auto auto auto auto;
-padding: 10px;
+gap: 20px;
+padding-top: 30px;
+
+img{
+    width:80%;
+
+}
+
+`
+
+export const GridItems = styled.div`
+width: 248px;
+height: 307px;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 `

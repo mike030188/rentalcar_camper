@@ -7,7 +7,7 @@ import CardComp from './Card';
 
 const CarInfo = () => {
   return (
-    <div>
+    <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
       <HeadWrapper>          
         <h2>Aidal</h2>
@@ -16,6 +16,7 @@ const CarInfo = () => {
           <Button comp>COMPARE</Button>
         </div>          
       </HeadWrapper>
+
       <MainWrapper>              
         <div>{content.map((item, index) => (
           <CardComp key={index} item={item}/>))}
