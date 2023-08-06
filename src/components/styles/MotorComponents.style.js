@@ -31,3 +31,8 @@ h1{
 }
 `
 
+export const GridContainer = styled.div`
+display: grid;
+grid-template-columns: auto auto auto auto;
+padding: 10px;
+`

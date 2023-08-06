@@ -13,12 +13,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-
 h2{
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 30px;
 }
+`
+
+export const MainWrapper = styled.div`
 
 `
 

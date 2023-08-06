@@ -1,12 +1,15 @@
-// import camping1 from '../../images/camping1.png';
-// import camping2 from '../../images/camping2.png';
+import camping1 from '../../assets/img/camping1.png';
+import camping2 from '../../assets/img/camping2.png';
+import camping3 from '../../assets/img/camping3.png';
+import camping4 from '../../assets/img/camping4.png';
+
 
 export const card = {
   yangi: [
     {
       id: 1,
       car: {
-        photo: "//",
+        photo: camping1,
         name: "르벤투스S+",
         cost: "90,200,000",
         type: "르노마스터",
@@ -20,7 +23,7 @@ export const card = {
     {
       id: 2,
       car: {
-        photo: "//",
+        photo: camping2,
         name: "르벤투스680S",
         cost: "93,700,000",
         type: "르노마스터",
@@ -34,7 +37,7 @@ export const card = {
     {
       id: 3,
       car: {
-        photo: "//",
+        photo: camping3,
         name: "르벤투스680",
         cost: "93,700,000",
         type: "르노마스터",
@@ -48,7 +51,7 @@ export const card = {
     {
       id: 4,
       car: {
-        photo: "//",
+        photo: camping4,
         name: "르벤투스 차박S",
         cost: "66,100,000",
         type: "르노마스터",
@@ -62,7 +65,7 @@ export const card = {
     {
       id: 5,
       car: {
-        photo: "//",
+        photo: camping1,
         name: "포스650",
         cost: "85,300,000",
         type: "포터",
@@ -76,7 +79,7 @@ export const card = {
     {
       id: 6,
       car: {
-        photo: "//",
+        photo: camping2,
         name: "포스560",
         cost: "93,700,000",
         type: "포터",
@@ -90,7 +93,7 @@ export const card = {
     {
       id: 7,
       car: {
-        photo: "//",
+        photo: camping3,
         name: "올카",
         cost: "62,600,000",
         type: "포터",
@@ -104,7 +107,7 @@ export const card = {
     {
       id: 8,
       car: {
-        photo: "//",
+        photo: camping4,
         name: "DS9eR+a",
         cost: "77,900,000",
         type: "봉고",
@@ -118,7 +121,7 @@ export const card = {
     {
       id: 9,
       car: {
-        photo: "//",
+        photo: camping1,
         name: "DS9eU+a",
         cost: "75,200,000",
         type: "봉고",
@@ -132,7 +135,7 @@ export const card = {
     {
       id: 10,
       car: {
-        photo: "//",
+        photo: camping2,
         name: "ACIER 790R",
         cost: "122,800,000",
         type: "이베코 뉴데일리",
@@ -144,9 +147,9 @@ export const card = {
       },
     },
     {
-      id: 12,
+      id: 11,
       car: {
-        photo: "//",
+        photo: camping3,
         name: "ACIER 900 Deluxe",
         cost: "142,800,000",
         type: "이베코 뉴데일리",
@@ -158,9 +161,9 @@ export const card = {
       },
     },
     {
-      id: 16,
+      id: 12,
       car: {
-        photo: "//",
+        photo: camping4,
         name: "ST-7",
         cost: "89,000,000",
         type: "봉고",
@@ -172,9 +175,9 @@ export const card = {
       },
     },
     {
-      id: 20,
+      id: 13,
       car: {
-        photo: "//",
+        photo: camping1,
         name: "트레블라인 660",
         cost: "76,000,000",
         type: "르노마스터",
@@ -186,9 +189,9 @@ export const card = {
       },
     },
     {
-      id: 21,
+      id: 14,
       car: {
-        photo: "//",
+        photo: camping2,
         name: "트레블라인 550",
         cost: "60,000,000",
         type: "르노마스터",
@@ -200,9 +203,9 @@ export const card = {
       },
     },
     {
-      id: 22,
+      id: 15,
       car: {
-        photo: "//",
+        photo: camping3,
         name: "트레블라인 650,",
         cost: "68,900,000",
         type: "봉고",
@@ -214,9 +217,9 @@ export const card = {
       },
     },
     {
-      id: 23,
+      id: 16,
       car: {
-        photo: "//",
+        photo: camping4,
         name: "트레블라인 350",
         cost: "59,900,000",
         type: "봉고",
@@ -228,9 +231,9 @@ export const card = {
       },
     },
     {
-      id: 24,
+      id: 17,
       car: {
-        photo: "//",
+        photo: camping1,
         name: "트레블라인 250,",
         cost: "49,000,000",
         type: "포터",
@@ -242,9 +245,9 @@ export const card = {
       },
     },
     {
-      id: 25,
+      id: 18,
       car: {
-        photo: "//",
+        photo: camping2,
         name: "트레블라인 220",
         cost: "39,000,000",
         type: "포터",
@@ -256,9 +259,9 @@ export const card = {
       },
     },
     {
-      id: 31,
+      id: 19,
       car: {
-        photo: " //",
+        photo: camping3,
         name: "HWC560DL",
         cost: "61,000,000",
         type: "포터",
@@ -270,9 +273,9 @@ export const card = {
       },
     },
     {
-      id: 32,
+      id: 20,
       car: {
-        photo: "//",
+        photo: camping4,
         name: "HWC620DL",
         cost: "76,000,000",
         type: "봉고",
@@ -283,7 +286,7 @@ export const card = {
         location: "경상권",
       },
     },
-    {
+    /* {
       id: 33,
       car: {
         photo: "//",
@@ -632,6 +635,6 @@ export const card = {
         company: "모터홈코리아",
         location: "수도권",
       },
-    },
+    }, */
   ],
 };
