@@ -1,7 +1,7 @@
 import React from 'react';
 import {card} from '../mock/poducts';
 import NavbarComp from '../navbar/Navbar';
-import { Col, Flex, GridContainer, GridItems, HeadWrapper, ItemBar, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
+import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
 import FooterComp from '../footer/Footer';
 import { Link } from 'react-router-dom';
 import { FaThLarge, FaThList } from 'react-icons/fa';
@@ -32,11 +32,104 @@ const MotorComponents = () => {
               </div>
             </div>
           </Col>
-          {/* <Col brand>
-            <select name="" id="" style={{marginLeft:'10px', width:'227px', height:'30px' }}>
-              <option value="">Select</option>
+          <Col brand>
+            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
+              <option value="">Brand</option>
             </select>
-          </Col> */}
+            <Line></Line>    
+            <Form>       
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Aidal</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Knal</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">escape</label>
+              </div>                
+            </Form>                                 
+          </Col>
+          <Col company>
+            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
+              <option value="">Company</option>
+            </select>
+            <Line></Line>    
+            <Form>       
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">escape</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Aidal</label>
+              </div>                             
+            </Form>                                 
+          </Col>
+          <Col license>
+            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
+              <option value="">License type</option>
+            </select>
+            <Line></Line>    
+            <Form>       
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">1 year</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">2 year</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">1.5 year</label>
+              </div>                
+            </Form>                                 
+          </Col>
+          <Col travelers>
+            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
+              <option value="">Number of travelers</option>
+            </select>
+            <Line></Line>    
+            <Form>       
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">2</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">3-4</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">5+</label>
+              </div>                
+            </Form>                                 
+          </Col>
+          <Col location>
+            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
+              <option value="">Location</option>
+            </select>
+            <Line></Line>    
+            <Form>       
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Seoul</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Daegu</label>
+              </div>
+              <div className="form-group">
+                <input type="checkbox" name="brand" />
+                <label htmlFor="">Busan</label>
+              </div>                
+            </Form>                                 
+          </Col>
+          <Button cnl>Cancel</Button>
+          <Button srch bg='#006DAB' style={{marginLeft:'8px'}}>Search</Button>
         </SideBar>
         <ItemBar>
           <Row>
