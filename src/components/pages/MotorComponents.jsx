@@ -134,7 +134,7 @@ const MotorComponents = () => {
         <ItemBar>
           <Row>
             <Flex left>
-            <div>Item:</div>
+            <div>Item: <span style={{color:'blue'}}>{datas.length}</span></div>
             </Flex>
             <Flex right>
               <label htmlFor="">Sort by</label>
