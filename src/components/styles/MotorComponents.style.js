@@ -102,14 +102,14 @@ label{
 `
 
 export const Button = styled.button`
-width: 115.804px;
-height: 38.968px;
+width: ${({wd})=>wd || '115.804px'};
+height: ${({hgt})=>hgt || '38.968px'};
 flex-shrink: 0;
 color: #FFF;
 font-weight: 700;
 font-size: 16px;
 border:none;
-border-radius: 60px;
+border-radius: ${({bR})=>bR || '60px'};
 background: ${({bg})=>bg || 'var(--sariq, #FF7A00)'} ;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 cursor: pointer;
@@ -170,9 +170,15 @@ img{
 `
 
 export const GridItems = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 5px 15px;
 width: 248px;
 height: 307px;
 border-radius: 20px;
 background: #FFF;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+
+
 `

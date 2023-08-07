@@ -3,7 +3,7 @@ import NavbarComp from '../navbar/Navbar';
 import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
 import FooterComp from '../footer/Footer';
 import { Link } from 'react-router-dom';
-import { FaThLarge, FaThList } from 'react-icons/fa';
+import { FaStar, FaThLarge, FaThList } from 'react-icons/fa';
 import carData from '../mock/carData';
 
 
@@ -150,9 +150,23 @@ const MotorComponents = () => {
           </Row>
           <GridContainer>{carData.slice(0, 20).map((item) => {
             return (
-              <Link to={`/carinfo/${item.id}`}>
+              
                 <GridItems key={item.id}>      
-                          
+                  <img src={item.photo} alt="camping car image" />
+                  <div style={{fontWeight:'700' }}>{item.name}</div>
+                  <div style={{display:'flex', justifyContent:'space-between'}}>
+                  <div>{item.company} </div>
+                  <span><FaStar style={{ color: "#f9a826" }}/>5.3</span>
+                  </div>
+                  <h2 style={{color:'#435a68'}}>{item.cost}</h2>
+                  <div style={{display:'flex', justifyContent:'space-between'}}>
+                    <Button order wd='100px' hgt='35px' bR='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Order</Button>
+                    <Link to={`/carinfo/${item.id}`}  style={{textDecoration:'none'}}>
+                      <Button detail wd='100px' hgt='35px' bR='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Detail</Button>
+                    </Link>
+                  </div>
+
+
                   {/* <p>{data.id}</p> */}
                   {/* <div>{data.car.company}</div>
                   <div>{data.car.cost}</div>
@@ -164,7 +178,7 @@ const MotorComponents = () => {
                   <img src={data.car.photo} alt="" />
                   <div>{data.car.type}</div>  */}             
                 </GridItems>
-              </Link>
+              
             )
           })}
           </GridContainer>
