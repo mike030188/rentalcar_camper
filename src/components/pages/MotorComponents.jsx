@@ -1,14 +1,14 @@
 import React from 'react';
-import {card} from '../mock/poducts';
 import NavbarComp from '../navbar/Navbar';
 import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
 import FooterComp from '../footer/Footer';
 import { Link } from 'react-router-dom';
 import { FaThLarge, FaThList } from 'react-icons/fa';
+import carData from '../mock/carData';
+
 
 const MotorComponents = () => {
-  const datas = card.yangi
-  console.log(datas)
+  console.log(carData)
   return (
     <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
@@ -134,7 +134,7 @@ const MotorComponents = () => {
         <ItemBar>
           <Row>
             <Flex left>
-            <div>Item: <span style={{color:'blue'}}>{datas.length}</span></div>
+            <div>Item: <span style={{color:'blue'}}>{carData.length}</span></div>
             </Flex>
             <Flex right>
               <label htmlFor="">Sort by</label>
@@ -148,12 +148,13 @@ const MotorComponents = () => {
               <button style={{borderRadius: '0px 5px 5px 0px'}}><FaThList style={{color:'grey'}}/></button>
             </Flex>
           </Row>
-          <GridContainer>{datas.map((data) => {
+          <GridContainer>{carData.slice(0, 20).map((item) => {
             return (
-              <Link to={`/carinfo/${data.id}`}>
-                <GridItems key={data.id}>              
+              <Link to={`/carinfo/${item.id}`}>
+                <GridItems key={item.id}>      
+                          
                   {/* <p>{data.id}</p> */}
-                  <div>{data.car.company}</div>
+                  {/* <div>{data.car.company}</div>
                   <div>{data.car.cost}</div>
                   <div>{data.car.date}</div>
                   <div>{data.car.license}</div>
@@ -161,7 +162,7 @@ const MotorComponents = () => {
                   <div>{data.car.name}</div>
                   <div>{data.car.people}</div>
                   <img src={data.car.photo} alt="" />
-                  <div>{data.car.type}</div>              
+                  <div>{data.car.type}</div>  */}             
                 </GridItems>
               </Link>
             )

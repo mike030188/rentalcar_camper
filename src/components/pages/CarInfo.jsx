@@ -6,6 +6,7 @@ import content from '../mock/content';
 import CardComp from './Card';
 
 const CarInfo = () => {
+  
   return (
     <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
@@ -16,8 +17,8 @@ const CarInfo = () => {
           <Button comp>COMPARE</Button>
         </div>          
       </HeadWrapper>
-
-      <MainWrapper>              
+      <MainWrapper>  
+               
         <div>{content.map((item, index) => (
           <CardComp key={index} item={item}/>))}
         </div>
