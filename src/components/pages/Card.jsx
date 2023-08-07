@@ -8,7 +8,7 @@ export default function CardComp ({item: { id, title, body, image }}) {
                 <p>{body}</p>
             </div>
             <div>
-                <img src={image} alt="img is not find" />
+                <img src={image} alt="not found" />
             </div>
         </StyledCard>
     )

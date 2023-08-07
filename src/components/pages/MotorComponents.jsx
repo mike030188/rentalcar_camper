@@ -152,7 +152,7 @@ const MotorComponents = () => {
             return (
               
                 <GridItems key={item.id}>      
-                  <img src={item.photo} alt="camping car image" />
+                  <img src={item.photo} alt="campingCar" />
                   <div style={{fontWeight:'700' }}>{item.name}</div>
                   <div style={{display:'flex', justifyContent:'space-between'}}>
                   <div>{item.company} </div>
@@ -175,7 +175,7 @@ const MotorComponents = () => {
                   <div>{data.car.location}</div>
                   <div>{data.car.name}</div>
                   <div>{data.car.people}</div>
-                  <img src={data.car.photo} alt="" />
+                  <img src={data.car.imgUrl} alt="" />
                   <div>{data.car.type}</div>  */}             
                 </GridItems>
               

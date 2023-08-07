@@ -24,6 +24,85 @@ export const MainWrapper = styled.div`
 
 `
 
+export const DetailWrap = styled.div`
+display: flex;
+height: 500px;
+padding: 5px 70px;
+
+& > div {
+  flex: 1;
+}
+
+`
+export const Img = styled.div`
+width: 100%;
+border: 1px solid black;
+
+`
+export const ItemInfo = styled.div`
+padding: 20px;
+display: flex;
+flex-direction: column;
+width: 600px;
+height: 360px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+margin-left: 50px;
+
+`
+export const FlexUp = styled.div`
+display: flex;
+align-items: center;
+width: 100%;
+height: 100px;
+border-bottom: 1px solid rgba(55, 55, 55, 0.30);
+
+& > div{
+  flex:1;
+}
+
+h2{
+  color: #000;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+p{
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1{
+  color: #006DAB;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+}
+`
+export const FlexDown = styled.div`
+display: flex;
+padding-top: 20px;
+
+& > div{
+  flex: 1;
+}
+
+ul{
+  list-style: none;  
+}
+
+li{
+  margin: 10px 0;
+}
+
+`
+
+
 export const Button = styled.button`
 width: 181px;
 height: 50px;
