@@ -8,12 +8,14 @@ export default function NavbarComp() {
             <Text>Camper</Text>
             <NavMenu>
                 <MenuItems>
-                    <select name="cars" id="cars">
-                        <option value="motor">Motor</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                    <Link to='/' style={{textDecoration:'none'}}>
+                        <select name="cars" id="cars">
+                            <option value="motor">Motor</option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </Link>
                 </MenuItems>
                 <MenuItems>
                     <select name="cars" id="cars">

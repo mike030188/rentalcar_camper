@@ -27,12 +27,13 @@ justify-content: space-around;
 `
 
 export const MenuItems = styled.div`
-    
+
 select{
     color: var(--text, #373737);
     font-size: 16px;
     line-height: normal;
     border: none;
+    cursor: pointer;
 }
 
 span{

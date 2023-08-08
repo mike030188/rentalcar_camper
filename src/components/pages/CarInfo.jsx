@@ -18,7 +18,7 @@ const CarInfo = () => {
     return <div>No car data found!</div>
   } */
   
-  console.log("data:", singleCarData);
+  // console.log("data:", singleCarData);
 
 
   return (
@@ -39,9 +39,9 @@ const CarInfo = () => {
       <MainWrapper>  
         <DetailWrap >
 
-          {/* Error occured on Image tag */}
+          {/* Error was occured on Image tag */}
 
-          <StyledImg src={singleCarData.photo} alt="campingCar" />
+          <img src={singleCarData.photo} alt="campingCar" style={{width:'50%', height:'100%'}}/>
 
           <ItemInfo>
             <FlexUp>              

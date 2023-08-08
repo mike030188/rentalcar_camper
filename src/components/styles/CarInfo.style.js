@@ -32,12 +32,6 @@ padding: 5px 70px;
 & > div {
   flex: 1;
 }
-
-`
-export const StyledImg = styled.div`
-width: 100%;
-border: 1px solid black;
-
 `
 export const ItemInfo = styled.div`
 padding: 20px;
