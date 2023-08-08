@@ -34,7 +34,7 @@ padding: 5px 70px;
 }
 
 `
-export const Img = styled.div`
+export const StyledImg = styled.div`
 width: 100%;
 border: 1px solid black;
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.style";
 import {FaCartPlus, FaUser} from 'react-icons/fa';
 
@@ -38,7 +39,9 @@ export default function NavbarComp() {
                         <option value="audi">Audi</option>
                     </select>
                 </MenuItems>
-                <MenuItems><span>Camping Place</span></MenuItems>
+                <Link to="/campingplaces" style={{textDecoration:'none'}}>
+                    <MenuItems><span>Camping Place</span></MenuItems>
+                </Link>
             </NavMenu>
             <NavIcons>
                 <FaCartPlus style={{color:'#006DAB'}}/>

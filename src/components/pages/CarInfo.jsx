@@ -1,10 +1,10 @@
 import React from 'react';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
-import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, Img, ItemInfo, MainWrapper } from '../styles/CarInfo.style';
+import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper, StyledImg } from '../styles/CarInfo.style';
 import content from '../mock/content';
 import CardComp from './Card';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import carData from '../mock/carData';
 
 
@@ -29,7 +29,9 @@ const CarInfo = () => {
       <HeadWrapper>          
         <h2>Aidal</h2>
         <div style={{display:'flex', }}>
-          <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
+          <Link to="/cart">
+            <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
+          </Link>
           <Button comp>COMPARE</Button>
         </div>          
       </HeadWrapper>
@@ -37,7 +39,9 @@ const CarInfo = () => {
       <MainWrapper>  
         <DetailWrap >
 
-          <Img src={singleCarData.photo} alt="campingCar" />
+          {/* Error occured on Image tag */}
+
+          <StyledImg src={singleCarData.photo} alt="campingCar" />
 
           <ItemInfo>
             <FlexUp>              
