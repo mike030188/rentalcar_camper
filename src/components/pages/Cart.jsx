@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
 import { Flex, FlexLeft, FlexRight, Title } from '../styles/Cart.style';
+import CartCarousel from './CartCarousel';
 
 const CartComp = () => {
   return (
@@ -12,7 +13,7 @@ const CartComp = () => {
       </Title>
       <Flex>
         <FlexLeft>
-          
+          <CartCarousel/>
         </FlexLeft>
         <FlexRight></FlexRight>
       </Flex>
