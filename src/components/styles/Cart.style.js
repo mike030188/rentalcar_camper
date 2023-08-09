@@ -29,6 +29,7 @@ export const FlexRight = styled.div`
 display: flex;
 flex-direction: column;
 flex: 2;
+height: 550px;
 overflow-y: scroll;
 `
 
@@ -82,6 +83,7 @@ label{
     color: rgba(55, 55, 55, 0.80);
     font-size: 16px;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 input{
@@ -94,6 +96,20 @@ input{
     background: rgba(55, 55, 55, 0.10);
     border: none;
     margin: 10px 0 20px;
+    padding-left: 20px;
 
+}
+
+select{
+    width: 311px;
+    height: 50px;
+    color: rgba(55, 55, 55, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 10px;
+    background: rgba(55, 55, 55, 0.10);
+    border: none;
+    margin: 10px 0 20px;
+    padding: 0 20px;
 }
 `

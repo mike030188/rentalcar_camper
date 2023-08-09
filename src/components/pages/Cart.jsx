@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
 import { DescriptionTitle, Flex, FlexLeft, FlexRight, FormAccount, FormCard, FormControl, Text, Title } from '../styles/Cart.style';
-import { Button } from '../styles/CarInfo.style';
-import carData from '../mock/carData';
 import { ArrowLeft, ArrowRight, CarouselInner, CarouselWrapper, CostTitle } from '../styles/CartCarousel.style';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { Button } from '../styles/CarInfo.style';
+import carData from '../mock/carData';
 
 const CartComp = () => {
   const [currImg, setCurrImg] = useState(0);
@@ -67,12 +67,29 @@ const CartComp = () => {
           </FormAccount>
           <FormCard>
             <Text>Card</Text>
+              <FormControl>
+                <label for='name'>Name on card</label>
+                <input type="text" placeholder='Name on card'/>
+                <label for='name'>Card Number</label>
+                <input type="number" placeholder='Card Number'/>
 
-          </FormCard>
-          <Button add wd='311px' hgt='45px'>Place Order</Button>
+                <label for='name'>Expiration Month</label>
+                <select name="" id="">
+                  <option value="month">01</option>
+                </select>
+                <label for='name'>Expiration Year</label>
+                <select name="" id="">
+                  <option value="year">2022</option>
+                </select>
+                <label for='email'>CVV</label>
+                <input type="text" placeholder='Your CVV'/>
+                <label for='number'>Billing Zip Cod</label>
+                <input type="number" placeholder='Billing Zip Cod'/>
+              </FormControl>
+              <Button add wd='311px' hgt='45px' style={{marginTop: "58px"}}>Place Order</Button>
+          </FormCard>          
         </FlexRight>
       </Flex>
-
       <FooterComp/>
     </div>
   )
