@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
-import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper, StyledImg } from '../styles/CarInfo.style';
+import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper } from '../styles/CarInfo.style';
 import content from '../mock/content';
 import CardComp from './Card';
 import { Link, useParams } from 'react-router-dom';
@@ -32,7 +32,7 @@ const CarInfo = () => {
           <Link to="/cart">
             <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
           </Link>
-          <Button comp>COMPARE</Button>
+          <Button>COMPARE</Button>
         </div>          
       </HeadWrapper>
 
@@ -78,7 +78,7 @@ const CarInfo = () => {
 
         <div style={{paddingLeft:'70px', marginTop:'-130px', marginBottom:'154px'}}>
           <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
-          <Button comp style={{border:'2px solid #006DAB', color:'#006DAB'}}>COMPARE</Button>
+          <Button style={{border:'2px solid #006DAB', color:'#006DAB'}}>COMPARE</Button>
         </div>
 
       </MainWrapper>         

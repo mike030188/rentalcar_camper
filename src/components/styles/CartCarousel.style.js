@@ -6,7 +6,7 @@ export const CarouselWrapper = styled.div`
     justify-content: center;
     width: 811px;
     height: 476px;
-    /* padding: 10px 20px; */
+    padding: 0 20px;
     border-radius: 10px;
     background: #FFF;
     /* btn sh */
@@ -14,7 +14,13 @@ export const CarouselWrapper = styled.div`
 
 `
 export const ArrowLeft = styled.div`
-
+display:flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+background: #006DAB;
+border-radius: 50%;
 `
 export const CarouselInner = styled.div`
     height: 90%;
@@ -48,5 +54,11 @@ h5{
 `
 
 export const ArrowRight = styled.div`
-
+display:flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+background: #006DAB;
+border-radius: 50%;
 `

@@ -109,7 +109,7 @@ color: #FFF;
 font-weight: 700;
 font-size: 16px;
 border:none;
-border-radius: ${({bR})=>bR || '60px'};
+border-radius: ${({br})=>br || '60px'};
 background: ${({bg})=>bg || 'var(--sariq, #FF7A00)'} ;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 cursor: pointer;

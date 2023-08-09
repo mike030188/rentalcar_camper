@@ -160,9 +160,9 @@ const MotorComponents = () => {
                   </div>
                   <h2 style={{color:'#435a68'}}>{item.cost}</h2>
                   <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <Button order wd='100px' hgt='35px' bR='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Order</Button>
+                    <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Order</Button>
                     <Link to={`/carinfo/${item.id}`}  style={{textDecoration:'none'}}>
-                      <Button detail wd='100px' hgt='35px' bR='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Detail</Button>
+                      <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Detail</Button>
                     </Link>
                   </div>
 
