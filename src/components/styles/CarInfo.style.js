@@ -98,8 +98,8 @@ li{
 
 
 export const Button = styled.button`
-width: 181px;
-height: 50px;
+width: ${({wd})=>wd || '181px'};
+height: ${({hgt})=> hgt || '50px'};
 color: #FFF;
 font-size: 16px;
 font-weight: 700;
