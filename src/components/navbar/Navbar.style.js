@@ -27,26 +27,41 @@ justify-content: space-around;
 `
 
 export const MenuItems = styled.div`
+position: relative;
+display: inline-block;
 
-p{
-}
-
-div{
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-select{
+button{
+    display: flex;
+    align-items: center;
     color: var(--text, #373737);
     font-size: 16px;
     line-height: normal;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
+
+div{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 12px;
+    z-index: 1;
+
+}
+
+P{
+    cursor: pointer;
+    &:hover{
+        display: flex;
+        color: red;
+        background-color: lightgrey;
+        opacity:0.9;
+        transform: scale(0.98);
+    }
+}
+
 
 span{
     color: var(--text, #373737);

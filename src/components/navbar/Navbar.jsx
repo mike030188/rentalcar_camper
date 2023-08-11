@@ -27,14 +27,14 @@ export default function NavbarComp() {
                 <MenuItems>                    
                     <button onClick={()=>{
                         dispatch({ type:"showToggle" });
-                        }}>Motor <FaAngleDown/>
+                        }}>Motor <FaAngleDown style={{marginLeft:'7px'}}/>
                     </button> 
                     {state.showItems && 
                         <div>
                             <Link to='/' style={{textDecoration:'none'}}>
                                 <p>Motor</p>
                             </Link>
-                                <p>Opel</p>
+                                <p style={{margin:'10px 0'}}>Opel</p>
                                 <p>Audi</p>
                         </div>
                     }    
