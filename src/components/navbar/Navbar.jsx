@@ -1,21 +1,43 @@
 import { Link } from "react-router-dom";
 import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.style";
-import {FaCartPlus, FaUser} from 'react-icons/fa';
+import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
+import { useReducer } from "react";
+
+// useReducer - switch case bilan yaxshi chiqishadi...
+
+const reducer = (state, action) => {
+    switch(action.type) {
+        case "showToggle":
+            return { showItems: !state.showItems};
+        default:
+            return state;
+    }
+};
 
 export default function NavbarComp() { 
+    
+    const [state, dispatch] = useReducer(reducer, {
+        showItems: false,
+    });
+
     return(
         <NavbarWrapper>
             <Text>Camper</Text>
             <NavMenu>
-                <MenuItems>
-                    <Link to='/' style={{textDecoration:'none'}}>
-                        <select name="cars" id="cars">
-                            <option value="motor">Motor</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
-                        </select>
-                    </Link>
+                <MenuItems>                    
+                    <button onClick={()=>{
+                        dispatch({ type:"showToggle" });
+                        }}>Motor <FaAngleDown/>
+                    </button> 
+                    {state.showItems && 
+                        <div>
+                            <Link to='/' style={{textDecoration:'none'}}>
+                                <p>Motor</p>
+                            </Link>
+                                <p>Opel</p>
+                                <p>Audi</p>
+                        </div>
+                    }    
                 </MenuItems>
                 <MenuItems>
                     <select name="cars" id="cars">

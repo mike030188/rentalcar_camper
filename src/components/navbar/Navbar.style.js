@@ -28,6 +28,18 @@ justify-content: space-around;
 
 export const MenuItems = styled.div`
 
+p{
+}
+
+div{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
 select{
     color: var(--text, #373737);
     font-size: 16px;
