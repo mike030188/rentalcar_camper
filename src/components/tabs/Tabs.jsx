@@ -4,8 +4,9 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { ContentPanel, GridPanel, GridItems, ItemHeader } from './Tabs.style';
+import { ContentPanel, GridPanel, GridItems, ItemHeader, InquiryLeft, InquiryRight } from './Tabs.style';
 import carData from '../mock/carData';
+import { Button } from '../styles/CarInfo.style';
 
 
 function CustomTabPanel(props) {
@@ -106,8 +107,28 @@ export default function BasicTabs() {
               
             </GridPanel>
         </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          Item Two
+        <CustomTabPanel value={value} index={1} > 
+          <div style={{display:'flex', padding:'40px 0 40px'}}>         
+            <InquiryLeft>
+              <p>Name</p>
+              <h2>Question Lorem ipsum dolor sit amet ?</h2>
+              <p>Name</p>
+              <h2>Question Lorem ipsum dolor sit amet ?</h2>
+              <p>Name</p>
+              <h2>Question Lorem ipsum dolor sit amet ?</h2>
+              <p>Name</p>
+              <h2>Question Lorem ipsum dolor sit amet ?</h2>
+              <p>Name</p>
+              <h2>Question Lorem ipsum dolor sit amet ?</h2>              
+            </InquiryLeft>
+            <InquiryRight>
+              <h1>Send a question</h1>
+              <input type="text" placeholder='Your name' />
+              <input type="email" placeholder='Your email'/>
+              <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+              <Button add wd="390px" hgt="50px" style={{fontSize: '16px', fontWeight: '500'}}>Send question</Button>
+            </InquiryRight>
+          </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           Item Three
