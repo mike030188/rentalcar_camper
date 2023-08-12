@@ -16,6 +16,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },    
     {      
       id: 2,
@@ -28,6 +29,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },    
     {      
       id: 3,
@@ -40,6 +42,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },    
     {
       id: 4,      
@@ -52,6 +55,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 5,
@@ -64,6 +68,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 6,
@@ -76,6 +81,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 7,
@@ -88,6 +94,7 @@ const carData = [
       date: "22년 03월",
       company: "다온티앤티",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 8,
@@ -100,6 +107,7 @@ const carData = [
       date: "22년 03월",
       company: "제일모빌",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 9,
@@ -112,6 +120,7 @@ const carData = [
       date: "22년 03월",
       company: "제일모빌",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 10,
@@ -124,6 +133,7 @@ const carData = [
       date: "22년 03월",
       company: "제일모빌",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 11,
@@ -136,6 +146,7 @@ const carData = [
       date: "22년 03월",
       company: "제일모빌",
       location: "수도권",
+      viewed: 135,
     },
     {
       id: 12,
@@ -148,6 +159,7 @@ const carData = [
       date: "22년 03월",
       company: "스타모빌",
       location: " 경상권",
+      viewed: 135,
     },
     {
       id: 13,
@@ -160,6 +172,7 @@ const carData = [
       date: "22년 03월",
       company: "영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 14,
@@ -172,6 +185,7 @@ const carData = [
       date: "22년 03월",
       company: "영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 15,
@@ -184,6 +198,7 @@ const carData = [
       date: "22년 03월",
       company: " 영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 16,
@@ -196,6 +211,7 @@ const carData = [
       date: "22년 03월",
       company: "영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 17,
@@ -208,6 +224,7 @@ const carData = [
       date: "22년 03월",
       company: "영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 18,
@@ -220,6 +237,7 @@ const carData = [
       date: "22년 03월",
       company: "영남캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 19,
@@ -232,6 +250,7 @@ const carData = [
       date: "22년 03월",
       company: "한울캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 20,
@@ -244,6 +263,7 @@ const carData = [
       date: "22년 03월",
       company: "한울캠핑카",
       location: "경상권",
+      viewed: 135,
     },
     {
       id: 21,
@@ -256,6 +276,7 @@ const carData = [
       date: "22년 03월",
       company: "한울캠핑카",
       location: "경상권",
+      viewed: 135,
     }
     /* {
       id: 33,

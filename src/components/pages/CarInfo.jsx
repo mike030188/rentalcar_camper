@@ -6,6 +6,7 @@ import content from '../mock/content';
 import CardComp from './Card';
 import { Link, useParams } from 'react-router-dom';
 import carData from '../mock/carData';
+import BasicTabs from '../tabs/Tabs';
 
 
 const CarInfo = () => {
@@ -80,9 +81,12 @@ const CarInfo = () => {
           <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
           <Button style={{border:'2px solid #006DAB', color:'#006DAB'}}>COMPARE</Button>
         </div>
+      </MainWrapper>  
 
-      </MainWrapper>         
+      <BasicTabs/>
+
       <FooterComp/>
+
     </div>
   )
 }

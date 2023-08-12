@@ -7,8 +7,14 @@ import { useReducer } from "react";
 
 const reducer = (state, action) => {
     switch(action.type) {
-        case "showToggle":
-            return { showItems: !state.showItems};
+        case "showToggle1":
+            return { showMotor: !state.showMotor};
+        case "showToggle2":
+            return { showCaravan: !state.showCaravan};
+        case "showToggle3":
+            return { showTuning: !state.showTuning};
+        case "showToggle4":
+            return { showUsedCar: !state.showUsedCar};
         default:
             return state;
     }
@@ -17,7 +23,7 @@ const reducer = (state, action) => {
 export default function NavbarComp() { 
     
     const [state, dispatch] = useReducer(reducer, {
-        showItems: false,
+        showMotor: false,
     });
 
     return(
@@ -26,10 +32,10 @@ export default function NavbarComp() {
             <NavMenu>
                 <MenuItems>                    
                     <button onClick={()=>{
-                        dispatch({ type:"showToggle" });
+                        dispatch({ type:"showToggle1" });
                         }}>Motor <FaAngleDown style={{marginLeft:'7px'}}/>
                     </button> 
-                    {state.showItems && 
+                    {state.showMotor && 
                         <div>
                             <Link to='/' style={{textDecoration:'none'}}>
                                 <p>Motor</p>
@@ -40,28 +46,49 @@ export default function NavbarComp() {
                     }    
                 </MenuItems>
                 <MenuItems>
-                    <select name="cars" id="cars">
-                        <option value="motor">Caravan</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                    <button onClick={()=>{
+                        dispatch({ type:"showToggle2" });
+                        }}>Caravan <FaAngleDown style={{marginLeft:'7px'}}/>
+                    </button> 
+                    {state.showCaravan && 
+                        <div>
+                            <Link to='/' style={{textDecoration:'none'}}>
+                                <p>Caravan</p>
+                            </Link>
+                                <p style={{margin:'10px 0'}}>Opel</p>
+                                <p>Audi</p>
+                        </div>
+                    }   
                 </MenuItems>
                 <MenuItems>
-                    <select name="cars" id="cars">
-                        <option value="motor">Tuning</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                    <button onClick={()=>{
+                        dispatch({ type:"showToggle3" });
+                        }}>Tuning <FaAngleDown style={{marginLeft:'7px'}}/>
+                    </button> 
+                    {state.showTuning && 
+                        <div>
+                            <Link to='/' style={{textDecoration:'none'}}>
+                                <p>Tuning</p>
+                            </Link>
+                                <p style={{margin:'10px 0'}}>Opel</p>
+                                <p>Audi</p>
+                        </div>
+                    } 
                 </MenuItems>
                 <MenuItems>
-                    <select name="cars" id="cars">
-                        <option value="motor">Used car</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                    <button onClick={()=>{
+                        dispatch({ type:"showToggle4" });
+                        }}>Used car <FaAngleDown style={{marginLeft:'7px'}}/>
+                    </button> 
+                    {state.showUsedCar && 
+                        <div>
+                            <Link to='/' style={{textDecoration:'none'}}>
+                                <p>Used car</p>
+                            </Link>
+                                <p style={{margin:'10px 0'}}>Opel</p>
+                                <p>Audi</p>
+                        </div>
+                    } 
                 </MenuItems>
                 <Link to="/campingplaces" style={{textDecoration:'none'}}>
                     <MenuItems><span>Camping Place</span></MenuItems>
