@@ -1,4 +1,6 @@
 import React from 'react';
+import Bounce from 'react-reveal/Bounce';
+import Zoom from 'react-reveal/Zoom';
 import NavbarComp from '../navbar/Navbar';
 import FooterComp from '../footer/Footer';
 import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper } from '../styles/CarInfo.style';
@@ -38,6 +40,7 @@ const CarInfo = () => {
       </HeadWrapper>
 
       <MainWrapper>  
+      <Zoom>
         <DetailWrap >
 
           {/* Error was occured on Image tag */}
@@ -72,9 +75,13 @@ const CarInfo = () => {
             </FlexDown>
           </ItemInfo>          
         </DetailWrap>  
+      </Zoom>
 
         <div>{content.map((item, index) => (
-          <CardComp key={index} item={item}/>))}
+          <Bounce left>
+          <CardComp key={index} item={item}/>
+          </Bounce>))}
+
         </div>
 
         <div style={{paddingLeft:'70px', marginTop:'-130px', marginBottom:'154px'}}>

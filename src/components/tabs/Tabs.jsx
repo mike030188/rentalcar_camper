@@ -86,7 +86,7 @@ export default function BasicTabs() {
               return (
                 <GridItems key={item.id}>
                   <div style={{display:'flex'}}>
-                    <img src={item.photo} alt="campingCar" width="28%" height="100px"/>
+                    <img src={item.photo} alt="campingCar" width="150px" height="100px"/>
                     <div style={{width:'100%', display:'flex', flexDirection:'column', justifyContent: 'center', paddingLeft:'15px'}}>
                       <h4>{item.company}</h4>
                       <h5>{item.name}</h5>

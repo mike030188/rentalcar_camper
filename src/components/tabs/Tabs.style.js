@@ -45,5 +45,7 @@ align-items: center;
 justify-content: space-between;
 
 border-bottom: 1px solid rgba(55, 55, 55, 0.15);
+
+
 `
 
