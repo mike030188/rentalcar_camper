@@ -17,13 +17,13 @@ flex: 1;
 color: var(--blue, #006DAB);
 font-size: 38px;
 line-height: normal;
+/* border: 1px solid black; */
 `
 export const NavMenu = styled.div`
 display: flex;
 flex: 3;
-justify-content: space-around;
-
-
+justify-content: space-evenly;
+/* border: 1px solid black; */
 `
 
 export const MenuItems = styled.div`
@@ -74,4 +74,6 @@ export const NavIcons = styled.div`
 display: flex;
 flex:1;
 justify-content: right;
+/* border: 1px solid black; */
+
 `

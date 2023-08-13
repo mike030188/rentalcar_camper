@@ -28,7 +28,10 @@ export default function NavbarComp() {
 
     return(
         <NavbarWrapper>
-            <Text>Camper</Text>
+            <Link to='/' style={{textDecoration:'none'}}>
+                <Text>Camper</Text>
+            </Link>
+            
             <NavMenu>
                 <MenuItems>                    
                     <button onClick={()=>{
@@ -37,7 +40,7 @@ export default function NavbarComp() {
                     </button> 
                     {state.showMotor && 
                         <div>
-                            <Link to='/' style={{textDecoration:'none'}}>
+                            <Link to='/motor' style={{textDecoration:'none'}}>
                                 <p>Motor</p>
                             </Link>
                                 <p style={{margin:'10px 0'}}>Opel</p>
@@ -90,10 +93,11 @@ export default function NavbarComp() {
                         </div>
                     } 
                 </MenuItems>
-                <Link to="/campingplaces" style={{textDecoration:'none'}}>
+                
+            </NavMenu>
+            <Link to="/campingplaces" style={{textDecoration:'none'}}>
                     <MenuItems><span>Camping Place</span></MenuItems>
                 </Link>
-            </NavMenu>
             <NavIcons>
                 <FaCartPlus style={{color:'#006DAB'}}/>
                 <FaUser style={{marginLeft:'25px', color:'#006DAB'}}/>
