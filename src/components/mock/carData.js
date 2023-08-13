@@ -7,6 +7,7 @@ import camping4 from '../../assets/img/camping4.png';
 const carData = [
     {     
       id: 1,
+      title: "Motor",
       photo: camping1,
       name: "르벤투스S+",
       cost: "90,200,000",
@@ -20,6 +21,7 @@ const carData = [
     },    
     {      
       id: 2,
+      title: "Caravan",
       photo: camping2,
       name: "르벤투스680S",
       cost: "93,700,000",
@@ -33,6 +35,7 @@ const carData = [
     },    
     {      
       id: 3,
+      title: "Tuning",      
       photo: camping3,
       name: "르벤투스680",
       cost: "93,700,000",
@@ -46,6 +49,7 @@ const carData = [
     },    
     {
       id: 4,      
+      title: "Used car",
       photo: camping4,
       name: "르벤투스 차박S",
       cost: "66,100,000",

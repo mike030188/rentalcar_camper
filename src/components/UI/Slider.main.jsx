@@ -9,37 +9,29 @@ const SliderMainComp = () => {
     const settings = {
         fade: true,
         speed: 2000,
-        autoplaySpeed: 900,
+        autoplaySpeed: 3000,
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         pauseOnHover: false,
     };
-    return (
-        <div>
-            <Slider {...settings} style={{overflow: 'hidden', height:'535px', width: '100%'}}>
-              
-                <SliderItem>
-                    <SliderItem1>
-                        salom
-                    </SliderItem1>
-                </SliderItem>
+    return (        
+        <Slider {...settings} style={{overflow: 'hidden', height:'535px', width: '100%'}}>
+            <SliderItem>
+                <SliderItem1>
+                </SliderItem1>
+            </SliderItem>
 
-                <SliderItem>
-                    <SliderItem2>
-                    bismillah
-                    </SliderItem2>
-                </SliderItem>
-                <SliderItem>
+            <SliderItem>
+                <SliderItem2>
+                </SliderItem2>
+            </SliderItem>
 
-                    <SliderItem3>
-                    Allohu akbar
-                    </SliderItem3>
-                </SliderItem>                
-            
-            </Slider>
-        </div>
-        
+            <SliderItem>
+                <SliderItem3>
+                </SliderItem3>
+            </SliderItem>         
+        </Slider>                
     );
 }
 
