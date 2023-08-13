@@ -7,7 +7,7 @@ const SliderMainComp = () => {
     const settings = {
         fade: true,
         speed: 2000,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 900,
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
