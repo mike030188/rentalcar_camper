@@ -30,7 +30,7 @@ const CarInfo = () => {
       <NavbarComp/>
 
       <HeadWrapper>          
-        <h2>Aidal</h2>
+        <h2>{singleCarData.name}</h2>
         <div style={{display:'flex', }}>
           <Link to="/cart">
             <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>

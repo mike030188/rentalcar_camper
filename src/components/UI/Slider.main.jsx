@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from "react-slick";
 import { SliderItem, SliderItem1, SliderItem2, SliderItem3 } from './Slider.style';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 const SliderMainComp = () => {
@@ -14,7 +16,8 @@ const SliderMainComp = () => {
         pauseOnHover: false,
     };
     return (
-        <Slider {...settings} style={{overflow: 'hidden', height:'535px', width: '100%'}}>
+        <div>
+            <Slider {...settings} style={{overflow: 'hidden', height:'535px', width: '100%'}}>
               
                 <SliderItem>
                     <SliderItem1>
@@ -34,7 +37,9 @@ const SliderMainComp = () => {
                     </SliderItem3>
                 </SliderItem>                
             
-        </Slider>
+            </Slider>
+        </div>
+        
     );
 }
 

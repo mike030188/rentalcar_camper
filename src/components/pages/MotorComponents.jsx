@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavbarComp from '../navbar/Navbar';
 import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
 import FooterComp from '../footer/Footer';
 import { Link } from 'react-router-dom';
 import { FaStar, FaThLarge, FaThList } from 'react-icons/fa';
 import carData from '../mock/carData';
+import HMenuComp from './HMenu';
+import YMenuComp from './YMenu';
+import YHcontroller from './YHcontroller';
 
 
-const MotorComponents = () => {
+const MotorComponents = ({onClick}) => {
+  const [on, setOn] = useState(true)
+  // const [active, setActive] = useState(true)
+  
+
+  // console.log(active)
+  console.log(on)
+
   console.log(carData)
+
+
+
   return (
     <div style={{background:' #FAFAFA'}}>
       <NavbarComp/>
@@ -18,7 +31,7 @@ const MotorComponents = () => {
         <h1>Motors</h1>
       </HeadWrapper>
       <MainWrap>
-        <SideBar>
+        {/* <SideBar>
           <Col cost>
             <Text>Cost of car</Text>
             <div style={{display:'flex', marginTop:'30px'}}>
@@ -130,7 +143,7 @@ const MotorComponents = () => {
           </Col>
           <Button cnl>Cancel</Button>
           <Button srch bg='#006DAB' style={{marginLeft:'8px'}}>Search</Button>
-        </SideBar>
+        </SideBar> */}
         <ItemBar>
           <Row>
             <Flex left>
@@ -144,47 +157,25 @@ const MotorComponents = () => {
               <select name="" id="" style={{margin:'0px 15px', width:'80px', height:'30px'}}>
                 <option value="">60</option>
               </select>
-              <button style={{borderRadius: '5px 0px 0px 5px'}}><FaThLarge/></button>
-              <button style={{borderRadius: '0px 5px 5px 0px'}}><FaThList style={{color:'grey'}}/></button>
+              <div style={{borderRadius: '5px 0px 0px 5px', border:'1px solid red'}} active={on} onClick={()=>{
+                      // setActive(true);
+                      onClick(true); 
+                      setOn(true)}} >
+                        <FaThLarge/></div>
+
+              <div style={{borderRadius: '0px 5px 5px 0px', border:'1px solid red'}} active={!on} onClick={()=>{
+                      // setActive(false);
+                      onClick(false); 
+                      setOn(false)}}><FaThList style={{color:'grey'}}/></div>
             </Flex>
           </Row>
-          <GridContainer>{carData.slice(0, 20).map((item) => {
-            return (
-              
-                <GridItems key={item.id}>      
-                  <img src={item.photo} alt="campingCar" />
-                  <div style={{fontWeight:'700' }}>{item.name}</div>
-                  <div style={{display:'flex', justifyContent:'space-between'}}>
-                  <div>{item.company} </div>
-                  <span><FaStar style={{ color: "#f9a826" }}/>5.3</span>
-                  </div>
-                  <h2 style={{color:'#435a68'}}>{item.cost}</h2>
-                  <div style={{display:'flex', justifyContent:'space-between'}}>
-                    <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Order</Button>
-                    <Link to={`/carinfo/${item.id}`}  style={{textDecoration:'none'}}>
-                      <Button wd='100px' hgt='35px' br='10px' bg='transparent' style={{border: '1px solid #006DAB', color:'#006DAB'}}>Detail</Button>
-                    </Link>
-                  </div>
+          {/* <HMenuComp active={on}/> */}
+          {/* <YMenuComp active={!on}/> */}
+          {/* <YHcontroller active={active}/> */}
 
-
-                  {/* <p>{data.id}</p> */}
-                  {/* <div>{data.car.company}</div>
-                  <div>{data.car.cost}</div>
-                  <div>{data.car.date}</div>
-                  <div>{data.car.license}</div>
-                  <div>{data.car.location}</div>
-                  <div>{data.car.name}</div>
-                  <div>{data.car.people}</div>
-                  <img src={data.car.imgUrl} alt="" />
-                  <div>{data.car.type}</div>  */}             
-                </GridItems>
-              
-            )
-          })}
-          </GridContainer>
         </ItemBar>
       </MainWrap>
-      <FooterComp/>
+      {/* <FooterComp/> */}
     </div>
   )
 }
