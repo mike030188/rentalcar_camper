@@ -17,6 +17,7 @@ import blog3 from '../../assets/main/blog3.png';
 import blog4 from '../../assets/main/blog4.png';
 import blog5 from '../../assets/main/blog5.png';
 import blog6 from '../../assets/main/blog6.png';
+import RecommendSliderComp from '../UI/Carousel.main';
 // import NavAccordionComp from '../navbar/NavAccordion';
 
 const MainComp = () => {
@@ -26,6 +27,7 @@ const MainComp = () => {
             <Title>
               <h2>Recommend</h2>
             </Title>
+            <RecommendSliderComp/>
             <Title>
               <h2>Videos</h2>
             </Title>
