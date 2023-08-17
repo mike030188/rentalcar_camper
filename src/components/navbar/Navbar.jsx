@@ -3,11 +3,11 @@ import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.styl
 import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
 import NavAccordionComp from "./NavAccordion";
 
-// import { useReducer } from "react";
+import { useReducer } from "react";
 
 // useReducer - switch case bilan yaxshi chiqishadi...
 
-/* const reducer = (state, action) => {
+const reducer = (state, action) => {
     switch(action.type) {
         case "showToggle1":
             return { showMotor: !state.showMotor};
@@ -20,13 +20,13 @@ import NavAccordionComp from "./NavAccordion";
         default:
             return state;
     } 
-}; */
+};
 
 export default function NavbarComp() { 
     
-    /* const [state, dispatch] = useReducer(reducer, {
+    const [state, dispatch] = useReducer(reducer, {
         showMotor: false,
-    }); */
+    });
     return(
         <NavbarWrapper>
             <Link to='/' style={{textDecoration:'none'}}>
@@ -34,9 +34,9 @@ export default function NavbarComp() {
             </Link>
             
             <NavMenu>
-                <NavAccordionComp/>
+                {/* <NavAccordionComp/> */}
 
-                {/* <MenuItems>                    
+                <MenuItems>                    
                     <button onClick={()=>{
                         dispatch({ type:"showToggle1" });
                         }}>Motor <FaAngleDown style={{marginLeft:'7px'}}/>
@@ -95,7 +95,7 @@ export default function NavbarComp() {
                                 <p>Audi</p>
                         </div>
                     } 
-                </MenuItems> */}
+                </MenuItems>
                 
             </NavMenu>
             <Link to="/campingplaces" style={{textDecoration:'none'}}>

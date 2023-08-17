@@ -20,15 +20,18 @@ line-height: normal;
 /* border: 1px solid black; */
 `
 export const NavMenu = styled.div`
+display: flex;
 flex: 3;
-border: 1px solid black;
+/* border: 1px solid black; */
+justify-content: space-around;
 `
 
 export const MenuItems = styled.div`
-/* position: relative;
-display: inline-block; */
+position: relative;
+display: inline-block;
 
-/* button{
+
+button{
     display: flex;
     align-items: center;
     color: var(--text, #373737);
@@ -59,7 +62,7 @@ P{
         transform: scale(0.98);
     }
 }
- */
+
 
 span{
     color: var(--text, #373737);
