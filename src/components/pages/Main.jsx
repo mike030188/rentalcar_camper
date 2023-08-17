@@ -1,6 +1,4 @@
 import React from 'react';
-import NavbarComp from '../navbar/Navbar';
-import FooterComp from '../footer/Footer';
 import SliderMainComp from '../UI/Slider.main';
 import { Title } from '../styles/Cart.style';
 import { GridBox, GridItems } from '../styles/Main.style';
@@ -19,12 +17,11 @@ import blog3 from '../../assets/main/blog3.png';
 import blog4 from '../../assets/main/blog4.png';
 import blog5 from '../../assets/main/blog5.png';
 import blog6 from '../../assets/main/blog6.png';
-import NavAccordionComp from '../navbar/NavAccordion';
+// import NavAccordionComp from '../navbar/NavAccordion';
 
 const MainComp = () => {
   return (
     <div style={{background:' #FAFAFA'}}>
-        <NavbarComp/>
             <SliderMainComp/>
             <Title>
               <h2>Recommend</h2>
@@ -60,7 +57,6 @@ const MainComp = () => {
                 <img src={blog6} alt="" />
               </GridItems>
             </div>
-        <FooterComp/>
     </div>
   )
 }

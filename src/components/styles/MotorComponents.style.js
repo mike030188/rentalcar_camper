@@ -40,7 +40,7 @@ padding: 0 70px;
 export const SideBar = styled.div`
 flex: 1;
 color: var(--text, #373737);
-padding: 85px 28px 0 0;
+padding: 87px 28px 0 0;
 `
 
 export const Col = styled.div`
@@ -159,7 +159,7 @@ button{
 export const GridContainer = styled.div`
 display: grid;
 grid-template-columns: auto auto auto auto;
-gap: 20px;
+gap: 10px;
 padding-top: 30px;
 
 img{
@@ -174,7 +174,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 padding: 5px 15px;
-width: 248px;
+width: 223px;
 height: 307px;
 border-radius: 20px;
 background: #FFF;

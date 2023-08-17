@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import NavbarComp from '../navbar/Navbar';
-import { Button, Col, Flex, Form, GridContainer, GridItems, HeadWrapper, ItemBar, Line, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
-import FooterComp from '../footer/Footer';
-import { Link } from 'react-router-dom';
-import { FaStar, FaThLarge, FaThList } from 'react-icons/fa';
+import { Flex, HeadWrapper, ItemBar, MainWrap, Row, SideBar, Text } from '../styles/MotorComponents.style';
+import { FaThLarge, FaThList } from 'react-icons/fa';
 import carData from '../mock/carData';
-import HMenuComp from './HMenu';
-import YMenuComp from './YMenu';
-import YHcontroller from './YHcontroller';
+
 
 
 const MotorComponents = ({onClick}) => {
@@ -24,126 +19,17 @@ const MotorComponents = ({onClick}) => {
 
   return (
     <div style={{background:' #FAFAFA'}}>
-      <NavbarComp/>
       <HeadWrapper>
         <h5>Home / Motors</h5>
         <h3>Our ranges</h3>
         <h1>Motors</h1>
       </HeadWrapper>
       <MainWrap>
-        {/* <SideBar>
-          <Col cost>
+        <SideBar>
+          
             <Text>Cost of car</Text>
-            <div style={{display:'flex', marginTop:'30px'}}>
-              <div style={{display:'flex', flexDirection:'column'}}>
-              <label htmlFor="">from</label>
-              <input type="text" />
-              </div>
-              <div style={{display:'flex', flexDirection:'column', marginLeft:'25px'}}>
-              <label htmlFor="">to</label>
-              <input type="text" />
-              </div>
-            </div>
-          </Col>
-          <Col brand>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Brand</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Aidal</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Knal</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">escape</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col company>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Company</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">escape</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Aidal</label>
-              </div>                             
-            </Form>                                 
-          </Col>
-          <Col license>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">License type</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">1 year</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">2 year</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">1.5 year</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col travelers>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Number of travelers</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">2</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">3-4</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">5+</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Col location>
-            <select name="" id="" style={{color: '#373737', fontWeight: '600', fontSize: '18px', border:'none', background:'transparent' }}>
-              <option value="">Location</option>
-            </select>
-            <Line></Line>    
-            <Form>       
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Seoul</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Daegu</label>
-              </div>
-              <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Busan</label>
-              </div>                
-            </Form>                                 
-          </Col>
-          <Button cnl>Cancel</Button>
-          <Button srch bg='#006DAB' style={{marginLeft:'8px'}}>Search</Button>
-        </SideBar> */}
+            
+        </SideBar>
         <ItemBar>
           <Row>
             <Flex left>

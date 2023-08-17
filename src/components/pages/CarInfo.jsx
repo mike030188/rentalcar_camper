@@ -1,8 +1,6 @@
 import React from 'react';
 import Bounce from 'react-reveal/Bounce';
 import Zoom from 'react-reveal/Zoom';
-import NavbarComp from '../navbar/Navbar';
-import FooterComp from '../footer/Footer';
 import { Button, DetailWrap, FlexDown, FlexUp, HeadWrapper, ItemInfo, MainWrapper } from '../styles/CarInfo.style';
 import content from '../mock/content';
 import CardComp from './Card';
@@ -27,7 +25,6 @@ const CarInfo = () => {
   return (
     <div style={{background:' #FAFAFA'}}>
 
-      <NavbarComp/>
 
       <HeadWrapper>          
         <h2>{singleCarData.name}</h2>
@@ -92,7 +89,6 @@ const CarInfo = () => {
 
       <BasicTabs/>
 
-      <FooterComp/>
 
     </div>
   )

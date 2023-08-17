@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import NavbarComp from '../navbar/Navbar';
-import FooterComp from '../footer/Footer';
 import { DescriptionTitle, Flex, FlexLeft, FlexRight, FormAccount, FormCard, FormControl, Text, Title } from '../styles/Cart.style';
 import { ArrowLeft, ArrowRight, CarouselInner, CarouselWrapper, CostTitle } from '../styles/CartCarousel.style';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
@@ -13,7 +11,6 @@ const CartComp = () => {
   return (
     <div style={{background:' #FAFAFA'}}>
       
-      <NavbarComp/>
       <Title>
         <h2>Cart</h2>
       </Title>
@@ -90,7 +87,6 @@ const CartComp = () => {
           </FormCard>          
         </FlexRight>
       </Flex>
-      <FooterComp/>
     </div>
   )
 }
