@@ -1,12 +1,34 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Button, Col} from '../styles/MotorComponents.style';
+import carData from '../mock/carData';
 
 export default function CostSidebarComp() {
+  const [filteredData, setFilteredData] = useState(carData);
+  const [isBrandChecked, setIsBrandChecked] = useState(false);
+
+
+
+  const handleClick = () => {
+    setIsBrandChecked(!isBrandChecked);
+    if (!isBrandChecked) {
+      const filteredCar = [...carData];
+    const filteredBrand = filteredCar.filter((carData) => 
+      carData.type.startsWith('르노마스터')
+    );
+      setFilteredData(filteredBrand)
+    } else {
+      setFilteredData([...carData])
+    }
+  };
+
+  // console.log("filtered Brand", filteredData);
+
+
   return (
     <div>
         <Col cost>
@@ -35,16 +57,16 @@ export default function CostSidebarComp() {
         <AccordionDetails>
           <Typography>
             <div className="form-group">
-                <input type="checkbox" name="brand" />
-                <label htmlFor="">Aidal</label>
+                <input type="checkbox" name="brand" onClick={handleClick}/>
+                <label htmlFor="">르노마스터</label>
               </div>
               <div className="form-group">
                 <input type="checkbox" name="brand" />
-                <label htmlFor="">Knal</label>
+                <label htmlFor="">포터</label>
               </div>
               <div className="form-group">
                 <input type="checkbox" name="brand" />
-                <label htmlFor="">escape</label>
+                <label htmlFor="">봉고</label>
               </div>
           </Typography>
         </AccordionDetails>
@@ -63,11 +85,11 @@ export default function CostSidebarComp() {
                  
               <div className="form-group">
                 <input type="checkbox" name="brand" />
-                <label htmlFor="">escape</label>
+                <label htmlFor="">다온티앤티</label>
               </div>
               <div className="form-group">
                 <input type="checkbox" name="brand" />
-                <label htmlFor="">Aidal</label>
+                <label htmlFor="">제일모빌</label>
               </div>                             
             
           </Typography>
