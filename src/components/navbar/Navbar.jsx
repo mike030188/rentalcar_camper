@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.style";
 import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
-import NavAccordionComp from "./NavAccordion";
 
 import { useReducer } from "react";
 
@@ -34,7 +33,6 @@ export default function NavbarComp() {
             </Link>
             
             <NavMenu>
-                {/* <NavAccordionComp/> */}
 
                 <MenuItems>                    
                     <button onClick={()=>{
@@ -43,11 +41,7 @@ export default function NavbarComp() {
                     </button> 
                     {state.showMotor && 
                         <div>
-                            <Link to='/motor' style={{textDecoration:'none'}}>
-                                <p>Motor</p>
-                            </Link>
-                                <p style={{margin:'10px 0'}}>Opel</p>
-                                <p>Audi</p>
+                            
                         </div>
                     }    
                 </MenuItems>

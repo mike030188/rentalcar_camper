@@ -27,8 +27,8 @@ justify-content: space-around;
 `
 
 export const MenuItems = styled.div`
-position: relative;
-display: inline-block;
+/* position: relative; */
+/* display: flex; */
 
 
 button{
@@ -40,15 +40,25 @@ button{
     border: none;
     cursor: pointer;
     background-color: transparent;
+
+    &:hover{
+        background-color: rgba(0, 109, 171, 0.05);
+        border-radius: 5px
+    }
 }
 
 div{
-    position: absolute;
+    width: 100%;
     background-color: #f9f9f9;
-    min-width: 140px;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    height: 200px;
+    margin-top: 35px;   
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 12px;
-    z-index: 1;
+    
+    
 
 }
 
