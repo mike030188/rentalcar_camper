@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.style";
 import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
-
 import { useReducer } from "react";
+// import carData from "../mock/carData";
+import camping1 from '../../assets/img/camping1.png'
+import CarouselApp from "../UI/ExampleCarusel";
 
 // useReducer - switch case bilan yaxshi chiqishadi...
 
@@ -41,8 +43,11 @@ export default function NavbarComp() {
                     </button> 
                     {state.showMotor && 
                         <div>
+                            <img src={camping1} alt="" />
+                            <button>See all</button>
                             
                         </div>
+                        
                     }    
                 </MenuItems>
                 <MenuItems>

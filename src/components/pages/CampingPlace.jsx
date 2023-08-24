@@ -1,6 +1,7 @@
 import React from 'react';
 import { GridContainer, HeadWrapper } from '../styles/CampingPlace.style';
 import placeContent from '../mock/placeContent';
+import { Link } from 'react-router-dom';
 
 const CampingPlaceComp = () => {
   return (
@@ -11,8 +12,10 @@ const CampingPlaceComp = () => {
         </HeadWrapper>
         <GridContainer>{placeContent.map((item) => {
             return (              
-                <div key={item.id}>      
+                <div key={item.id}>    
+                <Link to='/campinglocation' style={{textDecoration: 'none'}}>  
                   <img src={item.imgUrl} alt="Camping Place" />
+                </Link>
                   <h3>{item.place}</h3>
                   <p>{item.location}</p>                        
                 </div>              

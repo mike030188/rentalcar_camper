@@ -2,7 +2,7 @@ import React from 'react';
 import SliderMainComp from '../UI/Slider.main';
 import { Title } from '../styles/Cart.style';
 import { GridBox, GridItems } from '../styles/Main.style';
-import video1 from '../../assets/main/video1.png';
+// import video1 from '../../assets/main/video1.png';
 import video2 from '../../assets/main/video2.png';
 import video3 from '../../assets/main/video3.png';
 import video4 from '../../assets/main/video4.png';
@@ -32,7 +32,8 @@ const MainComp = () => {
               <h2>Videos</h2>
             </Title>
             <GridBox>
-              <img src={video1} alt="" />
+              <iframe src="https://www.youtube.com/watch?v=0ZgizY-9jOc" frameborder="0"></iframe>
+              {/* <video src="" alt="" /> */}
               <img src={video2} alt="" />
               <img src={video3} alt="" />
               <img src={video4} alt="" />

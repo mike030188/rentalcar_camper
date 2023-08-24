@@ -49,17 +49,38 @@ button{
 
 div{
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #FFF;
     left: 0;
-    z-index: 1;
+    z-index: 20;
     position: absolute;
-    height: 200px;
+    height: 290px;
     margin-top: 35px;   
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 12px;
-    
-    
+    border-top: 1px solid red;
+    display: flex;
 
+    align-items: center;
+    justify-content: center;
+
+    button{
+        width:230px;
+        height:40px;
+        margin-top:45px;
+        border-radius: 10px;
+        background: var(--blue, #006DAB);
+        padding: 9px 80px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover{
+            border-radius: 10px;
+            background-color: #006DAB;
+            opacity: 0.7;
+        }
+
+    }
 }
 
 P{
@@ -80,6 +101,8 @@ span{
     line-height: normal;
 }
 `
+
+
 
 export const NavIcons = styled.div`
 display: flex;
