@@ -5,6 +5,7 @@ import { useReducer } from "react";
 // import carData from "../mock/carData";
 import camping1 from '../../assets/img/camping1.png'
 import CarouselApp from "../UI/ExampleCarusel";
+import carData from "../mock/carData";
 
 // useReducer - switch case bilan yaxshi chiqishadi...
 
@@ -41,12 +42,22 @@ export default function NavbarComp() {
                         dispatch({ type:"showToggle1" });
                         }}>Motor <FaAngleDown style={{marginLeft:'7px'}}/>
                     </button> 
-                    {state.showMotor && 
-                        <div>
-                            <img src={camping1} alt="" />
+                    {state.showMotor && (
+                        <div>{carData.slice(0, 5).map((item)=>{
+                            return(
+                                <>
+                            <img src={item.photo} alt="" /> 
+                            
+
+                                </>
+                            )
+                        })}
+                        <Link to='/motor' style={{textDecoration:'none'}}>
                             <button>See all</button>
+                        </Link>
                             
                         </div>
+                        )
                         
                     }    
                 </MenuItems>

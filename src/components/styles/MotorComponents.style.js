@@ -161,6 +161,8 @@ display: grid;
 grid-template-columns: auto auto auto auto;
 gap: 10px;
 padding-top: 30px;
+margin-bottom: 20px;
+
 
 img{
     width:80%;
@@ -174,7 +176,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-around;
 padding: 5px 15px;
-width: 223px;
+width: 100%;
 height: 307px;
 border-radius: 20px;
 background: #FFF;
