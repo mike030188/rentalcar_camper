@@ -1,11 +1,13 @@
 import React from 'react'
-import { Flex, ImageWrapper, Info, SubTitle, Title } from '../styles/CampingLocation.style';
+import { Flex, ImageWrapper, Info, InfoItemLeft, InfoItemRight, Span, SubTitle, Text, Title } from '../styles/CampingLocation.style';
 import img1 from '../../assets/location/image 11.png';
 import img2 from '../../assets/location/image 12.png';
 import img3 from '../../assets/location/image 13.png';
 import img4 from '../../assets/location/image 14.png';
 import img5 from '../../assets/location/image 15.png';
 import img6 from '../../assets/location/image 16.png';
+import {CiLocationOn, CiClock2, CiHome} from 'react-icons/ci'
+import {FiPhone} from 'react-icons/fi'
 
 const CampingLocationComp = () => {
   return (
@@ -24,7 +26,26 @@ const CampingLocationComp = () => {
             <button>Copy map</button>
         </Flex>
         <Info>
-
+            <InfoItemLeft>
+                <div>
+                    <Span><CiLocationOn style={{color:'#373737B2'}}/></Span>
+                    <Text>Korea, Seul</Text>
+                </div>
+                <div style={{marginTop:'18px'}}>
+                    <Span><FiPhone style={{color:'#373737B2'}}/></Span>
+                    <Text>005- 862 -8569</Text>
+                </div>                
+            </InfoItemLeft>
+            <InfoItemRight>
+                <div>
+                    <Span><CiClock2 style={{color:'#373737B2'}}/></Span>
+                    <Text> from <span>11:00</span> to <span>19:00</span> </Text>
+                </div>
+                <div style={{marginTop:'18px'}}>
+                    <Span><CiHome style={{color:'#373737B2'}}/></Span>
+                    <a href="www.logomaker.com">logo.com</a>
+                </div>                
+            </InfoItemRight>
         </Info>
         <SubTitle>
             <h4>Description</h4>

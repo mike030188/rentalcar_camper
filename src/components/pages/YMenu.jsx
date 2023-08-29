@@ -7,7 +7,7 @@ import { FaStar } from 'react-icons/fa'
 
 const YMenuComp = () => {
   return (
-    <GridList>{carData.slice(0, 7).map((item) => {
+    <GridList>{carData.slice(0, 8).map((item) => {
       return (
         <Flex>
           <FlexRight>

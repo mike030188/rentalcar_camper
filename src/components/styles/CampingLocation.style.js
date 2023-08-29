@@ -52,9 +52,64 @@ button{
 `
 
 export const Info = styled.div`
+display: flex;
+align-items: center;
 border-top: 1px solid rgba(55, 55, 55, 0.20);
 height: 92px;
 margin: 0 70px;
+line-height: normal;
+
+`
+export const InfoItemLeft = styled.div`
+display: flex;
+flex-direction: column;
+
+
+div{
+    display: flex;
+}
+
+`
+export const Span = styled.div`
+width: 20px;
+height: 20px;
+cursor: pointer;
+
+&:hover{
+        opacity: 0.9;
+        transform: scale(0.98);
+    }
+
+`
+export const InfoItemRight = styled.div`
+display: flex;
+flex-direction: column;
+margin-left: 127px;
+
+div{
+    display: flex;
+}
+span{    
+    color: var(--sariq, #FF7A00);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+a{
+    color: var(--blue, #006DAB);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+}
+`
+
+export const Text = styled.div`
+color: var(--text, #373737);
+font-size: 14px;
+font-weight: 400;
+
 `
 
 export const SubTitle = styled.div`

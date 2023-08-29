@@ -1,10 +1,8 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.style";
 import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
 import { useReducer } from "react";
-// import carData from "../mock/carData";
-import camping1 from '../../assets/img/camping1.png'
-import CarouselApp from "../UI/ExampleCarusel";
 import carData from "../mock/carData";
 
 // useReducer - switch case bilan yaxshi chiqishadi...
@@ -53,7 +51,7 @@ export default function NavbarComp() {
                             )
                         })}
                         <Link to='/motor' style={{textDecoration:'none'}}>
-                            <button>See all</button>
+                            <button className="btn-seeall">See all</button>
                         </Link>
                             
                         </div>

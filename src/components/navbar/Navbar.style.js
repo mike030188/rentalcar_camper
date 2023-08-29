@@ -60,9 +60,9 @@ div{
     border-top: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    button{
+    .btn-seeall{
         width:230px;
         height:40px;
         margin-top:45px;
