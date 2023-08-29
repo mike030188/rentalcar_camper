@@ -12,6 +12,7 @@ import NavbarComp from './components/navbar/Navbar';
 import CampingLocationComp from './components/pages/CampingLocation';
 import TestCompCaravan from './components/pages/caravan/TestCompCaravan';
 import SignInComp from './components/auth/SignIn';
+import RegistrateComp from './components/auth/Registrate';
 
 
 function App() {
@@ -25,16 +26,19 @@ function App() {
 function MainApp() {
 
 const tolocate = useLocation();
-const authPage = tolocate.pathname === "/signin";
+const signInPage = tolocate.pathname === "/signin";
+const registrPage = tolocate.pathname === "/registrate";
+
 
   return (
     <React.Fragment>
-      {!authPage && <NavbarComp/> }
+      {!signInPage && !registrPage && <NavbarComp/> }
       
         <Routes>
           <Route path="/" element={<MainComp/>}/>
           <Route path="/carinfo/:id" element={<CarInfo/>} />
           <Route path="/signin" element={<SignInComp/>}/>
+          <Route path="/registrate" element={<RegistrateComp/>}/>
           <Route path="/motor" element={<TestComp/>} />
           <Route path="/caravan" element={<TestCompCaravan/>} />
           <Route path="/cart" element={<CartComp/>} />
@@ -42,7 +46,7 @@ const authPage = tolocate.pathname === "/signin";
           <Route path="/campinglocation" element={<CampingLocationComp/>} />
         </Routes>
 
-      {!authPage &&  <FooterComp/>}
+      {!signInPage && !registrPage &&  <FooterComp/>}
 
     </React.Fragment>
   )

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const GridBox = styled.div`
 display: grid;
 grid-template-columns: auto auto auto auto;
-gap: 20px 20px;
-justify-content: center;
+gap: 10px 0;
+justify-content: space-between;
 padding: 0 70px;
 `
 
