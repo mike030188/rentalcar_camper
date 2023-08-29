@@ -4,6 +4,7 @@ import { MenuItems, NavIcons, NavMenu, NavbarWrapper, Text } from "./Navbar.styl
 import {FaAngleDown, FaCartPlus, FaUser} from 'react-icons/fa';
 import { useReducer } from "react";
 import carData from "../mock/carData";
+import caravanData from "../mock/caravanData";
 
 // useReducer - switch case bilan yaxshi chiqishadi...
 
@@ -64,14 +65,22 @@ export default function NavbarComp() {
                         dispatch({ type:"showToggle2" });
                         }}>Caravan <FaAngleDown style={{marginLeft:'7px'}}/>
                     </button> 
-                    {state.showCaravan && 
-                        <div>
-                            <Link to='/' style={{textDecoration:'none'}}>
-                                <p>Caravan</p>
-                            </Link>
-                                <p style={{margin:'10px 0'}}>Opel</p>
-                                <p>Audi</p>
+                    {state.showCaravan && (
+                        <div>{caravanData.slice(0, 5).map((item)=>{
+                            return(
+                                <>
+                            <img src={item.photo} alt="" /> 
+                            
+
+                                </>
+                            )
+                        })}
+                        <Link to='/caravan' style={{textDecoration:'none'}}>
+                            <button className="btn-seeall">See all</button>
+                        </Link>
+                            
                         </div>
+                        )
                     }   
                 </MenuItems>
                 <MenuItems>

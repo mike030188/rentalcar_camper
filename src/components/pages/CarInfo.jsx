@@ -7,6 +7,7 @@ import CardComp from './Card';
 import { Link, useParams } from 'react-router-dom';
 import carData from '../mock/carData';
 import BasicTabs from '../tabs/Tabs';
+// import caravanData from '../mock/caravanData';
 
 
 const CarInfo = () => {
@@ -14,6 +15,9 @@ const CarInfo = () => {
   const { id } = useParams();
 
   const singleCarData = carData.find((data)=> data.id === parseInt(id))
+
+  // const singleCaravanData = caravanData.find((data)=> data.id === parseInt(id))
+
   
   /* if (!carData) { 
     return <div>No car data found!</div>
@@ -28,6 +32,7 @@ const CarInfo = () => {
 
       <HeadWrapper>          
         <h2>{singleCarData.name}</h2>
+        {/* <h2>{singleCaravanData.name}</h2> */}
         <div style={{display:'flex', }}>
           <Link to="/cart">
             <Button add style={{marginRight:'12px'}}>ADD TO CART</Button>
@@ -43,6 +48,7 @@ const CarInfo = () => {
           {/* Error was occured on Image tag */}
 
           <img src={singleCarData.photo} alt="campingCar" style={{width:'50%', height:'100%'}}/>
+          {/* <img src={singleCaravanData.photo} alt="campingCar" style={{width:'50%', height:'100%'}}/> */}
 
           <ItemInfo>
             <FlexUp>              

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Flex, ImageWrapper, Info, InfoItemLeft, InfoItemRight, Span, SubTitle, Text, Title } from '../styles/CampingLocation.style';
+import {CiLocationOn, CiClock2, CiHome} from 'react-icons/ci';
+import {FiPhone} from 'react-icons/fi';
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import img1 from '../../assets/location/image 11.png';
 import img2 from '../../assets/location/image 12.png';
 import img3 from '../../assets/location/image 13.png';
 import img4 from '../../assets/location/image 14.png';
 import img5 from '../../assets/location/image 15.png';
 import img6 from '../../assets/location/image 16.png';
-import {CiLocationOn, CiClock2, CiHome} from 'react-icons/ci'
-import {FiPhone} from 'react-icons/fi'
-
 const CampingLocationComp = () => {
   return (
     <div style={{background: '#FAFAFA'}}>
@@ -55,9 +55,23 @@ const CampingLocationComp = () => {
                 bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.
             </p>
         </SubTitle>
+        {/* <Map google={this.props.google} zoom={14}>
+ 
+        <Marker onClick={this.onMarkerClick}
+                name={'Current location'} />
+ 
+        <InfoWindow onClose={this.onInfoWindowClose}>
+            
+        </InfoWindow>
+      </Map> */}
 
     </div>
   )
 }
 
-export default CampingLocationComp
+
+
+  
+export default GoogleApiWrapper({
+    apiKey: ("YOUR_GOOGLE_API_KEY_GOES_HERE")
+  })(CampingLocationComp)
