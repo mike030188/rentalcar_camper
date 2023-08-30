@@ -4,11 +4,12 @@ import camping3 from '../../assets/img/camping3.png';
 import camping4 from '../../assets/img/camping4.png';
 
 
+
 const carData = [
     {     
       id: 1,
       title: "Motor",
-      photo: camping1,
+      photo: camping1,      
       name: "르벤투스S+",
       cost: "90,200,000",
       type: "르노마스터",
