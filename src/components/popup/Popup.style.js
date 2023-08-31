@@ -2,20 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 padding: 10px 70px;
-width: 95%;
-min-height: 100vh;
+width: 100%;
 position: relative;
-margin: 0 auto;
-/* display: flex;
-justify-content: center;
-align-items: center; */
+margin: 0 0;
 
 .media-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
     /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
     gap: 15px;
-    margin: 20px auto;
 
     .media{
         width: 291px;

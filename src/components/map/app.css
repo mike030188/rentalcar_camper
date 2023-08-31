@@ -1,0 +1,11 @@
+.map{
+    width: 100%;
+    height: 850px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width:medium;
+    border-color: #d8d8d8;
+  }

@@ -28,7 +28,7 @@ const PopupApp = () => {
 
                 {
                     file?.type === 'video'
-                    ? <video src={file?.url} muted autoPlay controls/>
+                    ? <video style={{height:'50%'}} src={file?.url} muted autoPlay controls/>
                     : <img src={file?.url} alt="" />
                 }
 

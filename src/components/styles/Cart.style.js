@@ -4,8 +4,8 @@ export const Title = styled.div`
 display: flex;
 justify-content: center;
 font-weight: 600;
-padding-top: 40px;
-margin-bottom: 30px;
+padding-top: 60px;
+margin-bottom: 50px;
 
 h2{
     font-size:35px;
