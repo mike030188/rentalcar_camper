@@ -26,7 +26,7 @@ export default function CostSidebarComp() {
     }
   };
 
-  // console.log("filtered Brand", filteredData);
+  console.log("filtered Brand", filteredData);
 
 
   return (

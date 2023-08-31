@@ -1,16 +1,7 @@
 import React from 'react';
 import SliderMainComp from '../UI/Slider.main';
 import { Title } from '../styles/Cart.style';
-import { GridBox, GridItems } from '../styles/Main.style';
-// import video1 from '../../assets/main/video1.png';
-import video2 from '../../assets/main/video2.png';
-import video3 from '../../assets/main/video3.png';
-import video4 from '../../assets/main/video4.png';
-import video5 from '../../assets/main/video5.png';
-import video6 from '../../assets/main/video6.png';
-import video7 from '../../assets/main/video7.png';
-import video8 from '../../assets/main/video8.png';
-
+import { GridItems } from '../styles/Main.style';
 import blog1 from '../../assets/main/blog1.png';
 import blog2 from '../../assets/main/blog2.png';
 import blog3 from '../../assets/main/blog3.png';
@@ -18,7 +9,7 @@ import blog4 from '../../assets/main/blog4.png';
 import blog5 from '../../assets/main/blog5.png';
 import blog6 from '../../assets/main/blog6.png';
 import CarouselApp from '../UI/ExampleCarusel';
-// import NavAccordionComp from '../navbar/NavAccordion';
+import PopupApp from '../popup/PopupTest';
 
 const MainComp = () => {
   return (
@@ -31,17 +22,7 @@ const MainComp = () => {
             <Title>
               <h2>Videos</h2>
             </Title>
-            <GridBox>
-              <iframe src="https://www.youtube.com/watch?v=0ZgizY-9jOc" frameborder="0"></iframe>
-              {/* <video src="" alt="" /> */}
-              <img src={video2} alt="" />
-              <img src={video3} alt="" />
-              <img src={video4} alt="" />
-              <img src={video5} alt="" />
-              <img src={video6} alt="" />
-              <img src={video7} alt="" />
-              <img src={video8} alt="" />
-            </GridBox>
+            <PopupApp/>
             <Title>
               <h2>Blogs</h2>
             </Title>

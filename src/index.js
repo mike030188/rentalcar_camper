@@ -13,7 +13,7 @@ import CampingLocationComp from './components/pages/CampingLocation';
 import TestCompCaravan from './components/pages/caravan/TestCompCaravan';
 import SignInComp from './components/auth/SignIn';
 import RegistrateComp from './components/auth/Registrate';
-import PopupComp from './components/popup/Popup';
+import PopupApp from './components/popup/PopupTest';
 
 
 function App() {
@@ -46,7 +46,8 @@ const registrPage = tolocate.pathname === "/registrate";
           <Route path="/campingplaces" element={<CampingPlaceComp/>} />
           <Route path="/campinglocation" element={<CampingLocationComp/>} />
 
-          <Route path="/popup" element={<PopupComp/>} />
+          {/* <Route path="/popup" element={<PopupComp/>} /> */}
+          <Route path="/popuptest" element={<PopupApp/>} />
 
         </Routes>
 

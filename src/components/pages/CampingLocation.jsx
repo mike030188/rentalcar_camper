@@ -2,7 +2,7 @@ import React from 'react'
 import { Flex, ImageWrapper, Info, InfoItemLeft, InfoItemRight, Span, SubTitle, Text, Title } from '../styles/CampingLocation.style';
 import {CiLocationOn, CiClock2, CiHome} from 'react-icons/ci';
 import {FiPhone} from 'react-icons/fi';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {GoogleApiWrapper} from 'google-maps-react';
 import img1 from '../../assets/location/image 11.png';
 import img2 from '../../assets/location/image 12.png';
 import img3 from '../../assets/location/image 13.png';

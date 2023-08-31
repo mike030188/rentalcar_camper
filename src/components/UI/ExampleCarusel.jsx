@@ -38,7 +38,7 @@ export default class CarouselApp extends Component {
                         </Img>
                         <h5>{item.company}</h5>
                         <Button>
-                            <a href="">Discover the range</a>
+                            <a href="/">Discover the range</a>
                         </Button>
                         <select name="car" id="model">
                             <option value="">Choose a model</option>
