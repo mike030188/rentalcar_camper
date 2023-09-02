@@ -45,8 +45,12 @@ export default function NavbarComp() {
                         <div>{carData.slice(0, 5).map((item)=>{
                             return(
                                 <>
-                            <img src={item.photo} alt="" /> 
-                            
+
+                             
+                            <p style={{display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}><span>
+                                <img src={item.photo} alt="" width="220px" height="130px"/></span>
+                                {item.name}
+                            </p>
 
                                 </>
                             )
